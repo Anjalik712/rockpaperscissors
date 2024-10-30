@@ -1,6 +1,5 @@
 function getComputerChoice(){
-    max=3;
-    let choice = Math.floor(Math.random() * max);
+    let choice = Math.floor(Math.random() * 3); //we have only 3 choices rock paper scissors
     switch(choice){
         case 0: return 'rock';
         break;
@@ -10,4 +9,8 @@ function getComputerChoice(){
         break;
     }    
 }
-console.log(getComputerChoice());
+function getHumanChoice(){
+    let choice=prompt("Enter your choice  (Rock/Paper/Scissors) : ");
+    return choice.toLowerCase();
+}
+
